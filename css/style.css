@@ -4,8 +4,7 @@ body{
     margin: 0px;
     border: 0px;
     padding: 0px;
-    background:url(../img/bg-image-3.jpg) no-repeat 50% 30% fixed;
-    background-size: 100%;
+    background:url(../img/bg-image-3.jpg) no-repeat 50% 20% fixed;
     color: white;
 }
 
@@ -19,12 +18,13 @@ body{
     height: 100vh;
     text-shadow:0px 0px 10px black,
                 0px 0px 20px white,
-                0px 0px 10px black; 
+                0px 0px 40px black; 
 }
 
 .header-main{
     /*background-image: url(../img/hero-bg.jpg);*/
     /*background-color: #F4DFC8;*/
+    padding: 0px;
 }
 
 .header{
@@ -227,6 +227,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background:url(../img/bg-image.jpg) no-repeat 50% 30% fixed;
+    background-size: 100%;
+    border-radius: 40%;
+    margin: 20px;
 }
 .quotes{
     display: flex;
