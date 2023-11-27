@@ -1,7 +1,12 @@
+
+
 body{
     margin: 0px;
     border: 0px;
     padding: 0px;
+    background:url(../img/bg-image-3.jpg) no-repeat 50% 30% fixed;
+    background-size: 100%;
+    color: white;
 }
 
 /* START HEADER */
@@ -12,12 +17,14 @@ body{
     margin: 0;
     margin-bottom: 50px;
     height: 100vh;
+    text-shadow:0px 0px 10px black,
+                0px 0px 20px white,
+                0px 0px 10px black; 
 }
 
 .header-main{
     /*background-image: url(../img/hero-bg.jpg);*/
-    background-color: #1f2937;
-    color: #E5E7EB;
+    /*background-color: #F4DFC8;*/
 }
 
 .header{
@@ -25,8 +32,8 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #284670;
-    padding: 10px;
+    padding: 20px;
+    background-color: #000000;
 }
 
 .header .header-icon {
@@ -37,10 +44,13 @@ body{
     height: 50px;
     width: 50px;
     transition: 0.5s ease-in-out;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px 5px  rgba(255, 255, 255, 0.6);
 }
 
 .header .header-icon img:hover{
-    transform: scaleX(1.2) scaleY(1.2);
+    transform: scaleX(0.8) scaleY(0.8);
+    box-shadow: 0px 0px 50px 10px  rgba(255, 255, 255, 0.6);
 }
 
 .header .header-link ul{
@@ -56,21 +66,21 @@ body{
 .header .header-link ul li a{
     font-size: 24px;
     text-decoration: none;
-    color: #E5E7EB;
+    color: white;
 }
 
 .header-info{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 100px;
     align-items: center;
     margin:20px;
 }
 
 .header-info .button{
-    background-color: aqua;
-    color: #1f2937;
+    background-color: #4C8CBF;
+    color: #FFFFFF;
     border-radius: 20px;
     border: 0px;
     transition: 0.3s ease-in-out;
@@ -91,8 +101,12 @@ body{
     height: auto;
     width: 150px;
     border-radius: 100%;
+    transition: 0.3s ease-in-out;
 }
 
+.header-info .img-content img:hover{
+    transform: scaleX(1.1) scaleY(0.8);
+}
 
 /*END HEADER*/
 
@@ -127,7 +141,7 @@ body{
     height: 260px;
     width: 190px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    box-shadow: 0px 0px 10px 5px  rgba(255, 255, 255, 0.705);
     /*background-color: #1f2937;*/
     text-align: center;
     transition: 0.3s ease-in-out;
@@ -137,18 +151,18 @@ body{
 
 .card-container .card:hover{
     transform: scale3d(1.1, 1.1, 0.2);
-    background-color: rgb(242, 242, 242);
+    background-color: rgba(255, 255, 255, 0.05)
 }
 
 .card img{
     height: 50px;
     width: 50px;
-    /*margin-top: auto;*/
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px 5px  rgba(255, 255, 255, 0.6);
 }
 /*END CARDS*/
 
 /*CAROUSEL*/
-
 
 .carousel-container{
     display: grid;
@@ -207,24 +221,45 @@ body{
 
 /*END CAROUSEL*/
 
+/*QUOTE*/
+
+.quotes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*background-color: #000000;*/
+    height: 40vh;
+    padding: 20px;
+    margin: 20px;
+}
+
+.quotes h3{
+    justify-self:center;
+    align-self: flex-end;
+}
+
+/*END QUOTE*/
 
 /*END MAIN CONTENT*/
 
 /*FOOTER START*/
 .footer{
-    background-color: #1f2937;
-    color: #f9f3f8;
-    position: fixed;
+    background-color: #000000;
+    color: white;
     left: 0;
     bottom: 0;
-    height: 50px;
     width: 100%;
     text-align: center;
 }
 
 .footer a{
     text-decoration: none;
-    color: #f9f3f8;
+    color: white;
 }
 
 /*END FOOTER*/
